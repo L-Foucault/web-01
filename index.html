@@ -23,7 +23,7 @@
         let searchBtn = document.querySelector('.search-btn')
         let style1 = document.createElement('style')
         let searchBox = document.querySelector('.search-box')
-        let timeBox = document.querySelector('.timeBox')
+        let  timeBox = document.querySelector('.timeBox')
         searchBtn.addEventListener('focus',function(){
             style1.innerHTML = "canvas{filter: blur(20px); transform: scale(1.01);}";
             document.head.appendChild(style1);
@@ -35,7 +35,7 @@
         })
 
         setInterval(function(){
-            let date = new Date()
+            let  date = new Date()
             let hh = padZero(date.getHours())
             let mm = padZero(date.getMinutes())
             let ss = padZero(date.getSeconds())
